@@ -57,5 +57,8 @@ xrandr --addmode DSI-1 1024x688_60.00
 xrandr --output DSI-1 --mode "1024x688_60.00"m
 ```
 
+Now you can just add it to a shell script and execute it every time your system starts.
+
 # Help me!
+I hope this guide was able to help you and you'll be able to enjoy your nice working Linux on the Chuwi Hi 10 Plus.
 If you do think that anything I've written is not correct or only partially correct, please leave me a comment. I'm always eager to learn something new and I will definitely enjoy and incorporate your support!

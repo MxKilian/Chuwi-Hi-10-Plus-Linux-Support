@@ -41,9 +41,16 @@ There's a helpful discussion following this link https://github.com/danielotero/
 Add another entry to **/etc/modprobe.d/blacklist.conf**:
 blacklist sndi_hdmi_lpe_audio
 
-After this you just need to download the following files (I do not know from where I got the link to those files, but however I will upload them at my repository as well, but please remember: **this is not created by me and I do not own any rights**).
+After this you just need to download the following file **"bytcrrt5651.zip"**. I unfortunately do not know from which github discussion I got the link to those files, but however I will upload them at this repository as well, but please remember: **this is not created by me and I do not own those files**. If you know which courtesy this is, please leave a comment.
+After you've downloaded the zip - file, extract it and move the two folders to **/usr/share/alsa/ucm** (replace the already existing directories if necessary).
+
+=> In the end this worked out for me to have at least a working headphone jack - in case of any recommendations or further improvements leave me a comment.
 
 ## 3. Screen Resolution
+As I was not happy with the original 1920x1080 resolution I downscaled to 1024x688.
+Just execute the following commands to add this resolution:
+
+'''bash
 
 # Help me!
 If you do think that anything I've written is not correct or only partially correct, please leave me a comment. I'm always eager to learn something new and I will definitely enjoy and incorporate your support!

@@ -52,6 +52,9 @@ As I was not happy with the original 1920x1080 resolution I downscaled to 1024x6
 Just execute the following commands to add this resolution:
 
 ```shell
+xrandr --newmode "1024x688_60.00" 56.75  1024 1072 1176 1328  688 691 701 715 -hsync +vsync
+xrandr --addmode DSI-1 1024x688_60.00
+xrandr --output DSI-1 --mode "1024x688_60.00"m
 ```
 
 # Help me!

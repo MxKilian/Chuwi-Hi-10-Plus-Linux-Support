@@ -10,11 +10,12 @@ So, after installing Linux (Lubuntu 4.15) I did have only **two** major issues r
 1. Backlight Support
 1. Audio Support (only headphone jacket)
 1. Screen Resolution
+1. Touchscreen
 
 ## 1. Backlight Support
 After some further research I found out, that when the kernel modules are loaded, i915 gets loaded before the PWM chip is initialized. This means that the PWM chip cannot be owned and therefore backlight isn't working.
 
-### Fix - delay the loading of the kernel module i915
+### Fix: delay the loading of the kernel module i915
 Therefore I've just added this line to the end of the following file **/etc/modprobe.d/blacklist.conf**:
 **blacklist i915**
 => This will result in the kernel module i915 not being loaded at boot, which will in turn allow the PWM chip to be owned.
@@ -36,7 +37,7 @@ This script will be executed as root (by rc.local) before the login screen of Li
 ## 2. Audio Support
 Another problem I've faced was, that even with the above mentioned guide by @danielotero, neither my headphone jack nor my integrated speakers were working.
 
-### Fix - blacklist sndi_hdmi_lpe_audio
+### Fix: blacklist sndi_hdmi_lpe_audio
 There's a helpful discussion following this link https://github.com/danielotero/linux-on-hi10/issues/8 regarding sound, please feel free to check out this discussion as well. However, I decided to not follow the mentioned approach of manually compiling a  file and sticked to this:
 
 Add another entry to **/etc/modprobe.d/blacklist.conf**:
@@ -58,6 +59,9 @@ xrandr --output DSI-1 --mode "1024x688_60.00"m
 ```
 
 Now you can just add it to a shell script and execute it every time your system starts.
+
+## 4. Touchscreen
+As I do currently use Lubuntu or i3wm I do not need to have the touchscreen enabled and working. If I want to do something with my touchscreen I just boot into my Windows on my Chuwi :). But if you do want to know how, please also refer to above mentioned guide.
 
 # Help me!
 I hope this guide was able to help you and you'll be able to enjoy your nice working Linux on the Chuwi Hi 10 Plus.

@@ -32,7 +32,7 @@ modprobe i915
 
 This script will be executed as root (by rc.local) before the login screen of Linux appears and load the i915 driver. Voilá, enjoy your working backlight.
 
-## Audio Support
+## 1. Audio Support
 Another problem I've faced was, that even with the above mentioned guide by @danielotero, neither my headphone jack nor my integrated speakers were working.
 
 ### Fix - blacklist sndi_hdmi_lpe_audio

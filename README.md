@@ -26,9 +26,10 @@ sh /usr/local/bin/start_i915.sh
 
 And the start_i915.sh script is defined as:
 
-'''bash
+```shell
 #!/bin/sh
 modprobe i915
+```
 
 This script will be executed as root (by rc.local) before the login screen of Linux appears and load the i915 driver. Voilá, enjoy your working backlight.
 
@@ -50,7 +51,8 @@ After you've downloaded the zip - file, extract it and move the two folders to *
 As I was not happy with the original 1920x1080 resolution I downscaled to 1024x688.
 Just execute the following commands to add this resolution:
 
-'''bash
+```shell
+```
 
 # Help me!
 If you do think that anything I've written is not correct or only partially correct, please leave me a comment. I'm always eager to learn something new and I will definitely enjoy and incorporate your support!

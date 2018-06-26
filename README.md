@@ -49,7 +49,7 @@ After you've downloaded the zip - file, extract it and move the two folders to *
 => In the end this worked out for me to have at least a working headphone jack - in case of any recommendations or further improvements leave me a comment.
 
 ## 3. Screen Resolution
-As I was not happy with the original 1920x1080 resolution I downscaled to 1024x688.
+As I was not happy with the original 1920x1200 resolution I downscaled to 1024x688.
 Just execute the following commands to add this resolution:
 
 ```shell
